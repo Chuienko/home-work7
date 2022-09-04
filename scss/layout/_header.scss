@@ -1,0 +1,127 @@
+.header {
+  background: var(--color-white-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+// .logo {
+//   color: var(--color-logo);
+//   font-family: "Raleway";
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+// }
+// .logo__accent {
+//   color: var(--accent-color);
+// }
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+/* header > .container {
+  display: flex;
+  align-items: center;
+} */
+
+/* menu block */
+.navigation__menu {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+  letter-spacing: 0.02em;
+  position: relative;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* При наведенні змінює колір */
+
+.navigation__menu:hover::after {
+  position: absolute;
+  background-color: var(--accent-color);
+  bottom: -1px;
+  right: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+/* .header__item:not(:last-child){
+margin-right: 30px;
+} */
+
+.navigation__list .header__item + .header__item {
+  margin-left: 50px;
+}
+
+/* Contact */
+
+.connect{
+  display: flex;
+  
+  & .links + .links {
+    margin-left: 50px;
+  }
+}
+.header__connnect {
+  margin-left: auto;
+}
+
+.connect__icon {
+  width: 26px;
+  height: 12px;
+  padding-right: 10px;
+  fill: currentColor;
+}
+
+.connect__mail-link,
+.connect__tell-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--item-color);
+
+  display: flex;
+  align-items: center;
+}
+.connect__mail-link:hover,
+.connect__tell-link:hover,
+.connect__mail-link:focus,
+.connect__tell-link:focus {
+  color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Активна кнопка посилання */
+.current {
+  color: var(--accent-color);
+  &::after {
+    position: absolute;
+    background-color: var(--accent-color);
+    bottom: -1px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+  }
+}

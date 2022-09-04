@@ -1,0 +1,48 @@
+.about {
+  padding: 94px 0;
+}
+
+.about__pre-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+.about__list {
+  display: flex;
+  & .about__item + .about__item {
+  margin-left: 30px;}
+}
+
+
+/* Видаляє непотрібні margin */
+
+
+/* 
+Варіант відступів 
+.about-item{
+margin-right: 30px;} */
+
+/* }
+.about-list .about-item:last-child{
+margin-right: 0;} */
+
+.about__title {
+  line-height: 1.71;
+  color: var(--item-color);
+}
+/* -----icon-about------ */
+.bg__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-btn);
+  border-radius: 4px;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.about__mark {
+  width: 70px;
+  height: 70px;}

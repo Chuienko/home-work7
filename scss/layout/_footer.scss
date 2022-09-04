@@ -1,0 +1,96 @@
+.footer {
+  display: flex;
+  background-color: var(--color-backgroutd);
+  padding: 60px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+// .footer-logo {
+//   display: block;
+//   font-family: "Raleway";
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   color: var(--color-white-text);
+// }
+// .footer-logo-accent {
+//   color: var(--accent-color);
+// }
+
+.footer__contact {
+  margin-top: 20px;
+}
+
+.footer__list {
+  display: block;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.footer__list:last-child {
+  margin-bottom: 0;
+}
+
+.footer__item {
+  line-height: 1.71;
+  color: var(--color-white-text);
+}
+.footer__link-mail {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__link-tell {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__blok {
+  margin-right: 70px;
+}
+
+/* --footer-icon-- */
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white-text);
+  margin-bottom: 20px;
+}
+
+
+
+.mailing {
+  margin-left: auto;
+}
+
+.footer__mail-icon {
+  margin-left: 10px;
+  fill: var(--color-white-text);
+}
+
+.mailing__form {
+  display: flex;
+}
+
+.mail__text {
+  width: 358px;
+
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-white-text);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
